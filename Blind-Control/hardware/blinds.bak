@@ -1,0 +1,193 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:74xgxx
+LIBS:ac-dc
+LIBS:actel
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:battery_management
+LIBS:bbd
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:dc-dc
+LIBS:diode
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ESP8266
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic
+LIBS:hc11
+LIBS:ir
+LIBS:Lattice
+LIBS:logo
+LIBS:maxim
+LIBS:mechanical
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:motor_drivers
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:Oscillators
+LIBS:Power_Management
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:relays
+LIBS:rfcom
+LIBS:sensors
+LIBS:silabs
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:tinkerforge
+LIBS:transf
+LIBS:ttl_ieee
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:zetex
+LIBS:Zilog
+LIBS:own
+LIBS:blinds-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U?
+U 1 1 586BAAAF
+P 4250 2350
+F 0 "U?" H 4250 2250 50  0000 C CNN
+F 1 "ESP-12E" H 4250 2450 50  0000 C CNN
+F 2 "" H 4250 2350 50  0001 C CNN
+F 3 "" H 4250 2350 50  0001 C CNN
+	1    4250 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 58CA7BCC
+P 1600 2100
+F 0 "#PWR?" H 1600 1950 50  0001 C CNN
+F 1 "+5V" H 1600 2240 50  0000 C CNN
+F 2 "" H 1600 2100 50  0000 C CNN
+F 3 "" H 1600 2100 50  0000 C CNN
+	1    1600 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58CA7BE2
+P 3450 3850
+F 0 "R?" V 3530 3850 50  0001 C CNN
+F 1 "10K" V 3450 3850 50  0000 C CNN
+F 2 "" V 3380 3850 50  0000 C CNN
+F 3 "" H 3450 3850 50  0000 C CNN
+	1    3450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58CA7C27
+P 3750 3850
+F 0 "R?" V 3830 3850 50  0001 C CNN
+F 1 "10K" V 3750 3850 50  0000 C CNN
+F 2 "" V 3680 3850 50  0000 C CNN
+F 3 "" H 3750 3850 50  0000 C CNN
+	1    3750 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 58CA7C36
+P 1850 3450
+F 0 "Q?" H 2050 3500 50  0001 L CNN
+F 1 "NPN" H 2050 3400 50  0000 L CNN
+F 2 "" H 2050 3550 50  0000 C CNN
+F 3 "" H 1850 3450 50  0000 C CNN
+	1    1850 3450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L AP7333 U?
+U 1 1 58CA7D15
+P 2200 1400
+F 0 "U?" H 2000 1600 60  0001 C CNN
+F 1 "HT7333" H 2200 1400 60  0000 L TNN
+F 2 "" H 2200 1400 60  0000 C CNN
+F 3 "" H 2200 1400 60  0000 C CNN
+	1    2200 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58CA7D52
+P 2000 2350
+F 0 "C?" H 2025 2450 50  0001 L CNN
+F 1 "10uF" V 2025 2250 50  0000 R TNN
+F 2 "" H 2000 2350 50  0000 C CNN
+F 3 "" H 2000 2350 50  0000 C CNN
+	1    2000 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58CA7F4D
+P 1850 1550
+F 0 "C?" H 1875 1650 50  0001 L CNN
+F 1 "10uF" V 1875 1450 50  0000 R TNN
+F 2 "" H 1850 1550 50  0000 C CNN
+F 3 "" H 1850 1550 50  0000 C CNN
+	1    1850 1550
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
