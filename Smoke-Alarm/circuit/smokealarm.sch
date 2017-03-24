@@ -1,0 +1,180 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:smokealarm-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ESP-12E U?
+U 1 1 586BAAAF
+P 4100 2150
+F 0 "U?" H 4100 2050 50  0001 C CNN
+F 1 "ESP-12E" H 4100 2250 50  0000 C CNN
+F 2 "" H 4100 2150 50  0001 C CNN
+F 3 "" H 4100 2150 50  0001 C CNN
+	1    4100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 58CA7BE2
+P 3050 2050
+F 0 "R?" V 3130 2050 50  0001 C CNN
+F 1 "10K" V 3050 2050 50  0000 C CNN
+F 2 "" V 2980 2050 50  0000 C CNN
+F 3 "" H 3050 2050 50  0000 C CNN
+	1    3050 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58CA7C27
+P 5150 2450
+F 0 "R?" V 5230 2450 50  0001 C CNN
+F 1 "10K" V 5150 2450 50  0000 C CNN
+F 2 "" V 5080 2450 50  0000 C CNN
+F 3 "" H 5150 2450 50  0000 C CNN
+	1    5150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L AP7333 U?
+U 1 1 58CA7D15
+P 2650 2800
+F 0 "U?" H 2450 3000 60  0001 C CNN
+F 1 "HT7333" H 2453 2977 60  0000 L TNN
+F 2 "" H 2650 2800 60  0000 C CNN
+F 3 "" H 2650 2800 60  0000 C CNN
+	1    2650 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58CA7D52
+P 3000 2950
+F 0 "C?" H 3025 3050 50  0001 L CNN
+F 1 "10uF" V 3025 2850 50  0000 R TNN
+F 2 "" H 3000 2950 50  0000 C CNN
+F 3 "" H 3000 2950 50  0000 C CNN
+	1    3000 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 58CA7F4D
+P 2300 2950
+F 0 "C?" H 2325 3050 50  0001 L CNN
+F 1 "10uF" V 2325 2850 50  0000 R TNN
+F 2 "" H 2300 2950 50  0000 C CNN
+F 3 "" H 2300 2950 50  0000 C CNN
+	1    2300 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3100 2300 3350
+Wire Wire Line
+	2650 3350 2650 3200
+Connection ~ 2650 3350
+$Comp
+L GND #PWR?
+U 1 1 58CA81C7
+P 1800 3350
+F 0 "#PWR?" H 1800 3100 50  0001 C CNN
+F 1 "GND" H 1800 3200 50  0000 C CNN
+F 2 "" H 1800 3350 50  0000 C CNN
+F 3 "" H 1800 3350 50  0000 C CNN
+	1    1800 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 3350
+Wire Wire Line
+	5300 2550 5000 2550
+Connection ~ 3000 3350
+Connection ~ 5300 2550
+Wire Wire Line
+	3000 3350 3000 3100
+$Comp
+L Q_NPN_BCE Q?
+U 1 1 58CA8AD6
+P 2100 3450
+F 0 "Q?" H 2300 3500 50  0001 L CNN
+F 1 "NPN" V 2300 3400 50  0000 L CNN
+F 2 "" H 2300 3550 50  0000 C CNN
+F 3 "" H 2100 3450 50  0000 C CNN
+	1    2100 3450
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	1900 3350 1800 3350
+$Comp
+L +9V #PWR?
+U 1 1 58CAAA01
+P 1800 2800
+F 0 "#PWR?" H 1800 2650 50  0001 C CNN
+F 1 "+9V" H 1800 2940 50  0000 C CNN
+F 2 "" H 1800 2800 50  0000 C CNN
+F 3 "" H 1800 2800 50  0000 C CNN
+	1    1800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 2800 2300 2800
+Wire Wire Line
+	2300 3350 5300 3350
+Wire Wire Line
+	2900 2050 2900 2550
+Wire Wire Line
+	2900 2550 3200 2550
+Text GLabel 2350 3900 0    60   Input ~ 0
+Alarm_Signal
+Wire Wire Line
+	2350 3900 2450 3900
+Wire Wire Line
+	2450 3900 2450 3650
+Wire Wire Line
+	2450 3650 2100 3650
+Connection ~ 3000 2550
+Wire Wire Line
+	3000 2550 3000 2800
+Wire Wire Line
+	5300 3350 5300 2450
+$EndSCHEMATC
